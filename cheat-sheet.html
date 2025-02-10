@@ -3,37 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <p># COMMANDS
--grep
+   <h1 class="The GREP WAY">The GREP Way</h1>
+<p>
+**The grep command is a powerful utility for searching text using patterns. It searches for <br> PATTERNS in each FILE and prints each line that matches a pattern. Typically, PATTERNS <br>should be quoted when grep is used in a shell command.
 
-## CREATE FILE
+<h2 class="Basic">Basic Syntax:</h2>
 
--touch (for files)
+grep [OPTION...] PATTERNS [FILE...] <br>
+
+<p id="Options">Common Options:</p>
+
+-i, --ignore-case: Ignore case distinctions in patterns and input data. <br>
+-v, --invert-match: Invert the sense of matching, to select non-matching lines. <br>
+-c, --count: Suppress normal output; instead print a count of matching lines for each input file. <br>
+-l, --files-with-matches: Suppress normal output; instead print the name of each input file from which output would normally have been printed. <br>
+-w, --word-regexp: Select only those lines containing matches that form whole words. <br>
+-x, --line-regexp: Select only those matches that exactly match the whole line. <br>
+-E, --extended-regexp: Interpret PATTERNS as extended regular expressions (EREs). <br>
+-F, --fixed-strings: Interpret PATTERNS as fixed strings, not regular expressions. <br>
+-P, --perl-regexp: Interpret PATTERNS as Perl-compatible regular expressions (PCREs). <br> 
+
+<h2 id="Examples">Examples: </h2>
+
+<div class="Examples"></div>
+    <p id="1"> -Search for a pattern in a file: <br>
+    grep 'pattern' filename 
+
+    <p id="2">-Search recursively in directories: <br>
+    grep -r 'pattern' directory/ 
+
+    <p id="3">-Count occurrences of a pattern: <br>
+    grep -c 'pattern' filename
+
+    <p id="4">-Display line numbers with matches: <br>
+    grep -n 'pattern' filename
+
+    <p id="5">-Search for multiple patterns: <br>
+    grep -e 'pattern1' -e 'pattern2' filename
+
+    <p id="6">-Use extended regular expressions: <br>
+    grep -E 'pattern' filename
+
+    <p id="7">-Search for whole words: <br>
+    grep -w 'word' filename
+
+    <p id="8">-Invert match (show lines that do not match): <br>
+    grep -v 'pattern' filename
+
+    <p id="9">-Display only the matched part of the line: <br>
+    grep -o 'pattern' filename
+
+    <p id="10">-Highlight matches in color: <br>
+    grep --color=auto 'pattern' filename
+
+    <p id="11">-Search for a pattern in multiple files: <br>
+    grep 'pattern' file1 file2 file3
+
+    <p id="12">-Suppress error messages about nonexistent or unreadable files: <br>
+    grep -s 'pattern' filename
+
+    <p id="13">-Display the name of each file with matching lines: <br>
+    grep -H 'pattern' filename
+
+    <p id="14">-Display only the names of files containing matches: <br>
+    grep -l 'pattern' *
+
+    <p>-Display only the names of files not containing matches: <br>
+    grep -L 'pattern' *
+
+    <p id="15">-Search for lines matching a pattern at the beginning of a line: <br>
+    grep '^pattern' filename
+
+    <p id="16">-Search for lines matching a pattern at the end of a line: <br>
+    grep 'pattern$' filename
+
+    <p id="17">-Search for lines containing a pattern and display the 3 lines after each match: <br>
+    grep -A 3 'pattern' filename
+
+    <p id="18">-Search for lines containing a pattern and display the 2 lines before each match: <br>
+    grep -B 2 'pattern' filename
+    </p>
+    <p id="19">-Search for lines containing a pattern and display the 2 lines before and after each <br>
+    grep -C 2 'pattern' filename
+    </p>
+    <p id="20">-Search for lines matching a pattern in a compressed file: <br>
+    zgrep 'pattern' file.gz
+    </p>
+    <p id="21">-Search for lines matching a pattern in the output of a command: <br>
+    command | grep 'pattern'
+    </p>
+    <p id="22">-Search for lines matching a pattern in all files in the current directory: <br>
+    grep 'pattern' *
+    </p>
+    <p id="23">-Search for lines matching a pattern in all .txt files in the current directory: <br>
+    grep 'pattern' *.txt
+    </p>
+    <p id="24">-Search for lines matching a pattern in all files in the current directory and subdirectories: <br>
+    grep -r 'pattern' .
+    </p>
+    <p id="25">-Search for lines matching a pattern in all .txt files in the current directory and subdirectories: <br>
+    grep -r --include='*.txt' 'pattern' .
+    </p>
+    <p id="26">-Search for lines matching a pattern in all files except .txt files in the current directory and subdirectories: <br>
+    grep -r --exclude='*.txt' 'pattern' .
+    </p>
+    <p id="27">-Search for lines matching a pattern in all hidden files in the current directory: <br>
+    grep 'pattern' .*
+    </p>
+    <p id="28">-Search for lines matching a pattern in all hidden files in the current directory and subdirectories: <br>
+    grep -r 'pattern' .[^.]*
+
+    <p id="29">-Search for lines matching a pattern in all files in the current directory, excluding binary files: <br>
+
+    grep -I 'pattern' *
+    </p>
+</div>
+<p id="30">## CREATE FILE <br>
+
+-touch (for files) <br>
 -echo 
 
-### BASH CMD
+<p id="31">### BASH CMD <br>
 
--mkdir
--ls -a
--ls
--code .
--cd ..
--cd .
+-mkdir <br>
+-ls -a <br>
+-ls <br>
+-code . <br>
+-cd .. <br>
+-cd . <br>
 
-#### GIT COMMANDS
-
--git switch
--git clone
--git branch
-
-##### A>C>P
-
--git add .
--git commit -m ""
--git push origin
 </p>
+<p id="32"></p>
+#### GIT COMMANDS <br>
+
+-git switch <br>
+-git clone <br>
+-git branch <br>
+</p>
+<p>
+##### A>C>P <br>
+
+-git add . <br>
+-git commit -m "" <br>
+-git push origin <br>
+</p>
+<script src="app.js"></script>
 </body>
 </html>
