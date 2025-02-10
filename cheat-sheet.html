@@ -11,6 +11,8 @@
 <p>
 **The grep command is a powerful utility for searching text using patterns. It searches for <br> PATTERNS in each FILE and prints each line that matches a pattern. Typically, PATTERNS <br>should be quoted when grep is used in a shell command.
 
+Note: Be sure to download Gnuwin Package, select grep, and download complete packet w/out src.
+
 <h2 class="Basic">Basic Syntax:</h2>
 
 grep [OPTION...] PATTERNS [FILE...] <br>
@@ -123,13 +125,38 @@ grep [OPTION...] PATTERNS [FILE...] <br>
     </p>
 </div>
 <div>
-    <h2 id="Gittem Info">Gitt'em Info</h2>
-<p id="30">## CREATE FILE <br>
+   
+
+<h2>Git Config'D</h2>
+<h3>Username</h3>
+
+-git config -global user.name"Your Name"
+(Set your name globally)
+
+<h3>Email</h3>
+
+- git config -global user.email "youremail@example.com"
+(Set your email globally.)
+
+<h3>Color My Output</h3>
+
+- git config -global color.ui auto -
+(Set to display colored output in the terminal)
+
+<h3>Initializing Repo</h3>
+
+-git init <directory>
+    (Creates a new Git repository in the specified directory.) <br>
+-git clone <repository_url>
+    (this Clones a repository from a remote server to your local machine.) <br>
+-git clone -branch <branch_name> <repository_url>
+    (Clones a specific branch from a repository.)
+<h3> CREATE FILE </h3>
 
 -touch (for files) <br>
 -echo 
 
-<p id="31">### BASH CMD <br>
+<h3> BASH CMD </h3>
 
 -mkdir <br>
 -ls -a <br>
@@ -137,22 +164,34 @@ grep [OPTION...] PATTERNS [FILE...] <br>
 -code . <br>
 -cd .. <br>
 -cd . <br>
+-git help (Display the main help documentation, showing a list of commonly used Git commands.)
 
-</p>
-<p id="32"></p>
-#### GIT COMMANDS <br>
+
+<h3> GIT COMMANDS </h3>
 
 -git switch <br>
 -git clone <br>
 -git branch <br>
-</p>
-<p>
-##### A>C>P <br>
 
--git add . <br>
--git commit -m "" <br>
--git push origin <br>
-</p>
+<h3>Basic Git Commands </h3>
+
+-git add  <"file"> <br>
+(Adds a specific file to the staging area.) <br>
+-git add . or git add -all
+(Adds all modified and new files to the staging area) <br>
+-git status  <br>
+(Shows the current state of your repository, including tracked and untracked files, modified files, and branch information.) <br>
+-git status –ignored <br>
+(Displays ignored files in addition to the regular status output.) <br>
+-git diff <br>
+(Shows the changes between the working directory and the staging area (index).) <br>
+-git diff <commit1> <commit2> <br>
+    (Displays the differences between two commits.) <br>
+-git diff –staged or git diff –cached
+(Displays the changes between the staging area (index) and the last commit.) <br>
+
+
+
 </div>
 <script src="app.js"></script>
 </body>
