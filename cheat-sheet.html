@@ -3,23 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Git Bash Commandline</title>
+    <style>
+    .Examples {
+        border: 5px outset purple;
+        background-color: light pink;
+        text-align: center;
+        margin: 10px, center;
+       
+    }
+    .Grep {
+       background-color: lightgrey;
+  width: 1800px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  text-align:center;
+}  
+    
+    </style>
 </head>
 <body>
+    <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://th.bing.com/th?q=Git+Bash+Windows+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-US&cc=US&setlang=en&adlt=moderate&t=1&mw=247" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      Git Bash CommandLine
+    </a>
+  </div>
+</nav>
+
+<div class="Grep">
    <h1 class="The GREP WAY">The GREP Way</h1>
 <p>
-**The grep command is a powerful utility for searching text using patterns. It searches for <br> PATTERNS in each FILE and prints each line that matches a pattern. Typically, PATTERNS <br>should be quoted when grep is used in a shell command.
+<pre>The grep command is a powerful utility for searching text using patterns. It searches for <br> <span class="color">PATTERNS</span>  in each <span class="color">FILE</span> and prints each line that matches a pattern. Typically,<span class="color">PATTERNS </span>should be quoted when grep is used in a shell command.</pre>
 
-Note: Be sure to download Gnuwin Package, select grep, and download complete packet w/out src for Windows use or GREpWin.
+Noted Option: Be sure to download Gnuwin Package, select grep, and download complete packet w/out src for Windows use or GREpWin, whichever suits you.
+</div>
 
+<div class="BSyn">
 <h2 class="Basic">Basic Syntax:</h2>
 
 grep [OPTION...] PATTERNS [FILE...] <br>
 
 <p id="Options">Common Options:</p>
 
--i, --ignore-case: Ignore case distinctions in patterns and input data. <br>
+<pre>-i, --ignore-case: Ignore case distinctions in patterns and input data. <br>
 -v, --invert-match: Invert the sense of matching, to select non-matching lines. <br>
 -c, --count: Suppress normal output; instead print a count of matching lines for each input file. <br>
 -l, --files-with-matches: Suppress normal output; instead print the name of each input file from which output would normally have been printed. <br>
@@ -27,12 +58,12 @@ grep [OPTION...] PATTERNS [FILE...] <br>
 -x, --line-regexp: Select only those matches that exactly match the whole line. <br>
 -E, --extended-regexp: Interpret PATTERNS as extended regular expressions (EREs). <br>
 -F, --fixed-strings: Interpret PATTERNS as fixed strings, not regular expressions. <br>
--P, --perl-regexp: Interpret PATTERNS as Perl-compatible regular expressions (PCREs). <br> 
+-P, --perl-regexp: Interpret PATTERNS as Perl-compatible regular expressions (PCREs). </pre> 
+</div>
 
+<div class="Examples">
 <h2 id="Examples">Examples: </h2>
-
-<div class="Examples"></div>
-    <p id="1"> -Search for a pattern in a file: <br>
+ <p id="1"> -Search for a pattern in a file: <br>
     grep 'pattern' filename 
 
     <p id="2">-Search recursively in directories: <br>
@@ -124,10 +155,10 @@ grep [OPTION...] PATTERNS [FILE...] <br>
     grep -I 'pattern' *
     </p>
 </div>
-<div>
+<div class="config">
    
 
-<h2>Git Config'D</h2>
+<h2 id="config">Git Config'D</h2>
 <h3>Username</h3>
 
 -git config -global user.name"Your Name"
@@ -151,12 +182,15 @@ grep [OPTION...] PATTERNS [FILE...] <br>
     (this Clones a repository from a remote server to your local machine.) <br>
 -git clone -branch <branch_name> <repository_url>
     (Clones a specific branch from a repository.)
-<h3> CREATE FILE </h3>
+    </div>
+<div class="create">
+<h3 class="cfile"> CREATE FILE </h3>
 
 -touch (for files) <br>
 -echo 
-
-<h3> BASH CMD </h3>
+</div>
+<div class="Bash">
+<h3 class="bcmd"> BASH COMMANDS </h3>
 
 -mkdir <br>
 -ls -a <br>
@@ -165,19 +199,20 @@ grep [OPTION...] PATTERNS [FILE...] <br>
 -cd .. <br>
 -cd . <br>
 -git help (Display the main help documentation, showing a list of commonly used Git commands.)
-
-
-<h3> GIT COMMANDS </h3>
+</div>
+<div class="Git">
+<h3 class="gcmd"> GIT COMMANDS </h3>
 
 -git switch <br>
 -git clone <br>
 -git branch <br>
+</div>
+<div class="Git">
+<h3 class="bgcmd">BASIC GIT Commands </h3>
 
-<h3>Basic Git Commands </h3>
-
--git add  <"file"> <br>
+<pre>-git add  <"file"> <br>
 (Adds a specific file to the staging area.) <br>
--git add . or git add -all
+-git add . or git add -all <br>
 (Adds all modified and new files to the staging area) <br>
 -git status  <br>
 (Shows the current state of your repository, including tracked and untracked files, modified files, and branch information.) <br>
@@ -187,12 +222,14 @@ grep [OPTION...] PATTERNS [FILE...] <br>
 (Shows the changes between the working directory and the staging area (index).) <br>
 -git diff <commit1> <commit2> <br>
     (Displays the differences between two commits.) <br>
--git diff –staged or git diff –cached
-(Displays the changes between the staging area (index) and the last commit.) <br>
+-git diff –staged or git diff –cached <br>
+(Displays the changes between the staging area (index) and the last commit.)
 
-
+</pre>
 
 </div>
+<footer id="creation">Created By: Jasmine Boyd </footer>
 <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

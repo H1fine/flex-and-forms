@@ -1,4 +1,37 @@
-id {
-    background-color: chartreuse;
+.config {
+    border: 5px outset purple;
+        background-color: light pink;
+        text-align: center;
 
+}
+
+.create {
+    border: 5px outset purple;
+        background-color: light pink;
+        text-align: center;
+}
+
+.Bash {
+    border: 5px outset purple;
+        background-color: light pink;
+        text-align: center;
+}
+
+.Git {
+    border: 5px outset purple;
+        background-color: light pink;
+        text-align: center;
+}
+
+#creation {
+        text-align: center;
+}
+
+.BSyn {
+    border: 5px outset purple;
+        background-color: light pink;
+        text-align: center;
+    }
+span.color {
+color:blueviolet
 }
