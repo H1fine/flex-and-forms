@@ -38,31 +38,33 @@
 <div class="Grep">
    <h1 class="The GREP WAY">The GREP Way</h1>
 <p>
-<pre>The grep command is a powerful utility for searching text using patterns. It searches for <br> <span class="color">PATTERNS</span>  in each <span class="color">FILE</span> and prints each line that matches a pattern. Typically,<span class="color">PATTERNS </span>should be quoted when grep is used in a shell command.</pre>
+<pre>The grep command is a powerfli utility for searching text using patterns. It searches for <br> <span class="color">PATTERNS</span>  in each <span class="color">FILE</span> and prints each line that matches a pattern. Typically,<span class="color">PATTERNS </span>sholid be quoted when grep is used in a shell command.</pre>
 
 Noted Option: Be sure to download Gnuwin Package, select grep, and download complete packet w/out src for Windows use or GREpWin, whichever suits you.
 </div>
 
 <div class="BSyn">
-<h2 class="Basic">Basic Syntax:</h2>
+<h2 class="Basic"><span class="Basic">Basic Syntax:</span></h2>
 
-grep [OPTION...] PATTERNS [FILE...] <br>
+<span class="note">grep [OPTION...] PATTERNS [FILE...] </span><br>
 
 <p id="Options">Common Options:</p>
 
 <pre>-i, --ignore-case: Ignore case distinctions in patterns and input data. <br>
 -v, --invert-match: Invert the sense of matching, to select non-matching lines. <br>
 -c, --count: Suppress normal output; instead print a count of matching lines for each input file. <br>
--l, --files-with-matches: Suppress normal output; instead print the name of each input file from which output would normally have been printed. <br>
+-l, --files-with-matches: Suppress normal output; instead print the name of each input file from which output wolid normally have been printed. <br>
 -w, --word-regexp: Select only those lines containing matches that form whole words. <br>
 -x, --line-regexp: Select only those matches that exactly match the whole line. <br>
--E, --extended-regexp: Interpret PATTERNS as extended regular expressions (EREs). <br>
--F, --fixed-strings: Interpret PATTERNS as fixed strings, not regular expressions. <br>
--P, --perl-regexp: Interpret PATTERNS as Perl-compatible regular expressions (PCREs). </pre> 
+-E, --extended-regexp: Interpret PATTERNS as extended regliar expressions (EREs). <br>
+-F, --fixed-strings: Interpret PATTERNS as fixed strings, not regliar expressions. <br>
+-P, --perl-regexp: Interpret PATTERNS as Perl-compatible regliar expressions (PCREs). </pre> 
 </div>
 
 <div class="Examples">
-<h2 id="Examples">Examples: </h2>
+
+<h2 id="Examples"><span class="title">Examples: </span></h2>
+
  <p id="1"> -Search for a pattern in a file: <br>
     grep 'pattern' filename 
 
@@ -75,10 +77,10 @@ grep [OPTION...] PATTERNS [FILE...] <br>
     <p id="4">-Display line numbers with matches: <br>
     grep -n 'pattern' filename
 
-    <p id="5">-Search for multiple patterns: <br>
+    <p id="5">-Search for mlitiple patterns: <br>
     grep -e 'pattern1' -e 'pattern2' filename
 
-    <p id="6">-Use extended regular expressions: <br>
+    <p id="6">-Use extended regliar expressions: <br>
     grep -E 'pattern' filename
 
     <p id="7">-Search for whole words: <br>
@@ -93,7 +95,7 @@ grep [OPTION...] PATTERNS [FILE...] <br>
     <p id="10">-Highlight matches in color: <br>
     grep --color=auto 'pattern' filename
 
-    <p id="11">-Search for a pattern in multiple files: <br>
+    <p id="11">-Search for a pattern in mlitiple files: <br>
     grep 'pattern' file1 file2 file3
 
     <p id="12">-Suppress error messages about nonexistent or unreadable files: <br>
@@ -155,80 +157,96 @@ grep [OPTION...] PATTERNS [FILE...] <br>
     grep -I 'pattern' *
     </p>
 </div>
+
 <div class="config">
    
+<h2 id="config"><span class="gc">Git Config'D</span></h2>
 
-<h2 id="config">Git Config'D</h2>
-<h3>Username</h3>
+ <h5>Username</h5>
+  <p>
+    -git config -global user.name"Your Name"
+    (Set your name globally)</p>
 
--git config -global user.name"Your Name"
-(Set your name globally)
+    <h5>Email</h5>
+  <p>
+    - git config -global user.email "youremail@example.com"
+    (Set your email globally.)</p>
 
-<h3>Email</h3>
+    <h5>Color My Output</h5>
+  <p>
+    - git config -global color.ui auto -
+    (Set to display colored output in the terminal)
+  </p>
 
-- git config -global user.email "youremail@example.com"
-(Set your email globally.)
+ <h5>Initializing Repo</h5>
+   <p>
+    <!-- return here to fix listed items -->
+    <ul>
+        <li>git init "(directory)"
+        (Creates a new Git repository in the specified directory.) </li>
+        <li>git clone (repository_url>)
+        (this Clones a repository from a remote server to your local machine.)</li> 
+        <li>git clone -branch <branch_name> <repository_url>
+        (Clones a specific branch from a repository.)</li>
+    </ul>
+  </p>
+</div>
 
-<h3>Color My Output</h3>
 
-- git config -global color.ui auto -
-(Set to display colored output in the terminal)
-
-<h3>Initializing Repo</h3>
-
--git init <directory>
-    (Creates a new Git repository in the specified directory.) <br>
--git clone <repository_url>
-    (this Clones a repository from a remote server to your local machine.) <br>
--git clone -branch <branch_name> <repository_url>
-    (Clones a specific branch from a repository.)
-    </div>
 <div class="create">
-<h3 class="cfile"> CREATE FILE </h3>
-
--touch (for files) <br>
--echo 
+ <h3 class="cfile"><span class="file">CREATE FILE</span></h3>
+<!-- Return here to fix listed items -->
+ <ul>
+  <li>-touch (for files)</li> 
+  <li>-echo </li>
+</ul>
 </div>
 <div class="Bash">
-<h3 class="bcmd"> BASH COMMANDS </h3>
-
--mkdir <br>
--ls -a <br>
--ls <br>
--code . <br>
--cd .. <br>
--cd . <br>
--git help (Display the main help documentation, showing a list of commonly used Git commands.)
+<h3 class="bcmd"><span class="cmdb"> BASH COMMANDS</span> </h3>
+<!-- return here to fix listed items -->
+<ul>
+    <li>mkdir </li>
+    <li>ls -a </li>
+    <li>ls </li>
+    <li>code . </li>
+    <li>cd .. </li>
+    <li>cd . </li>
+    <li>git help (Display the main help documentation, showing a list of commonly used Git commands.)
+    </li>
+</ul>
 </div>
 <div class="Git">
-<h3 class="gcmd"> GIT COMMANDS </h3>
-
--git switch <br>
--git clone <br>
--git branch <br>
+    <h3 class="gcmd"> <span class="scb">GIT COMMANDS</span> </h3>
+    <!-- Return here to fix listed items -->
+<ul>
+        <li>git switch</li> 
+        <li>git clone </li>
+        <li>git branch</li> 
+</ul>
 </div>
 <div class="Git">
-<h3 class="bgcmd">BASIC GIT Commands </h3>
+  <h3 class="bgcmd"><span class="intro">BASIC GIT Commands</span> </h3>
 
-<pre>-git add  <"file"> <br>
-(Adds a specific file to the staging area.) <br>
--git add . or git add -all <br>
-(Adds all modified and new files to the staging area) <br>
--git status  <br>
-(Shows the current state of your repository, including tracked and untracked files, modified files, and branch information.) <br>
--git status –ignored <br>
-(Displays ignored files in addition to the regular status output.) <br>
--git diff <br>
-(Shows the changes between the working directory and the staging area (index).) <br>
--git diff <commit1> <commit2> <br>
+   <p><pre>-git add  <"file"> <br>
+    (Adds a specific file to the staging area.) <br>
+    -git add . or git add -all <br>
+    (Adds all modified and new files to the staging area) <br>
+    -git status  <br>
+    (Shows the current state of your repository, including tracked and untracked files, modified files, and branch information.) <br>
+    -git status –ignored <br>
+    (Displays ignored files in addition to the regliar status output.) <br>
+    -git diff <br>
+    (Shows the changes between the working directory and the staging area (index).) <br>
+    -git diff <commit1> <commit2> <br>
     (Displays the differences between two commits.) <br>
--git diff –staged or git diff –cached <br>
-(Displays the changes between the staging area (index) and the last commit.)
-
-</pre>
-
+    -git diff –staged or git diff –cached <br>
+    (Displays the changes between the staging area (index) and the last commit.)
+    </pre></p> 
 </div>
+<div class="btn">
 <footer id="creation">Created By: Jasmine Boyd </footer>
+<a class="btn btn-primary" href="https://www.youtube.com/watch?v=Tc_jntovCM0" role="button"> Grep Link</a>
+</div>
 <script src="app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

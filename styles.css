@@ -33,5 +33,39 @@
         text-align: center;
     }
 span.color {
-color:blueviolet
+color:blueviolet;
 }
+
+span.Basic {
+    color: green;
+}
+
+span.note {
+    color:blueviolet;
+}
+
+span.title {
+    color: green;
+}
+
+span.gc {
+    color:green;
+}
+
+span.file {
+    color: green;
+    text-align: center;
+}
+
+span.cmdb {
+    color: green;
+}
+
+span.scb {
+    color: green;
+}
+
+span.intro {
+    color: green;
+}
+
