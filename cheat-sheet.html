@@ -50,22 +50,22 @@ Noted Option: Be sure to download Gnuwin Package, select grep, and download comp
 
 <p id="Options">Common Options:</p>
 
-<pre>-i, --ignore-case: Ignore case distinctions in patterns and input data. <br>
--v, --invert-match: Invert the sense of matching, to select non-matching lines. <br>
--c, --count: Suppress normal output; instead print a count of matching lines for each input file. <br>
--l, --files-with-matches: Suppress normal output; instead print the name of each input file from which output wolid normally have been printed. <br>
--w, --word-regexp: Select only those lines containing matches that form whole words. <br>
--x, --line-regexp: Select only those matches that exactly match the whole line. <br>
--E, --extended-regexp: Interpret PATTERNS as extended regliar expressions (EREs). <br>
--F, --fixed-strings: Interpret PATTERNS as fixed strings, not regliar expressions. <br>
--P, --perl-regexp: Interpret PATTERNS as Perl-compatible regliar expressions (PCREs). </pre> 
+<pre><strong>-i</strong>, <span class="ignore">--ignore-case:</span> Ignore case distinctions in patterns and input data. <br>
+<strong>-v</strong>,<span class="invert">--invert-match:</span>  Invert the sense of matching, to select non-matching lines. <br>
+<strong>-c</strong>, <span class="count">--count: </span>Suppress normal output; instead print a count of matching lines for each input file. <br>
+<strong>-l</strong>, <span class=" matches">--files-with-matches:</span> Suppress normal output; instead print the name of each input file from which output wolid normally have been printed. <br>
+<strong>-w</strong>,<span class="reg">--word-regexp:</span>  Select only those lines containing matches that form whole words. <br>
+<strong>-x</strong>, <span class="line">--line-regexp:</span> Select only those matches that exactly match the whole line. <br>
+<strong>-E</strong>, <span class="ext">--extended-regexp: </span>Interpret PATTERNS as extended regliar expressions (EREs). <br>
+<strong>-F</strong>, <span class="fixed">--fixed-strings:</span> Interpret PATTERNS as fixed strings, not regliar expressions. <br>
+<strong>-P</strong>, <span class="perl">--perl-regexp:</span> Interpret PATTERNS as Perl-compatible regliar expressions (PCREs). </pre> 
 </div>
 
 <div class="Examples">
 
 <h2 id="Examples"><span class="title">Examples: </span></h2>
 
- <p id="1"> -Search for a pattern in a file: <br>
+ <p id="1"><strong> -Search for a pattern in a file: <br>
     grep 'pattern' filename 
 
     <p id="2">-Search recursively in directories: <br>
@@ -155,7 +155,7 @@ Noted Option: Be sure to download Gnuwin Package, select grep, and download comp
     <p id="29">-Search for lines matching a pattern in all files in the current directory, excluding binary files: <br>
 
     grep -I 'pattern' *
-    </p>
+    </strong></p>
 </div>
 
 <div class="config">
@@ -164,31 +164,31 @@ Noted Option: Be sure to download Gnuwin Package, select grep, and download comp
 
  <h5>Username</h5>
   <p>
-    -git config -global user.name"Your Name"
-    (Set your name globally)</p>
+   <strong> -git config -global user.name"Your Name"
+    (Set your name globally)</strong></p>
 
     <h5>Email</h5>
   <p>
-    - git config -global user.email "youremail@example.com"
-    (Set your email globally.)</p>
+    <strong>- git config -global user.email "youremail@example.com"
+    (Set your email globally.)</strong></p>
 
     <h5>Color My Output</h5>
-  <p>
-    - git config -global color.ui auto -
-    (Set to display colored output in the terminal)
+  <p >
+    <strong>- git config -global color.ui auto -
+    (Set to display colored output in the terminal)</strong>
   </p>
 
  <h5>Initializing Repo</h5>
    <p>
     <!-- return here to fix listed items / try label?-->
-    <ul>
-        <li>git init "(directory)"
-        (Creates a new Git repository in the specified directory.) </li>
-        <li>git clone (repository_url>)
-        (this Clones a repository from a remote server to your local machine.)</li> 
-        <li>git clone -branch <branch_name> <repository_url>
-        (Clones a specific branch from a repository.)</li>
-    </ul>
+    <dl>
+        <dt>git init "(directory)"
+        (Creates a new Git repository in the specified directory.) </dt>
+        <dt>git clone (repository_url>)
+        (this Clones a repository from a remote server to your local machine.)</dt> 
+        <dt>git clone -branch <branch_name> <repository_url>
+        (Clones a specific branch from a repository.)</dt>
+    </dl>
   </p>
 </div>
 
@@ -196,38 +196,38 @@ Noted Option: Be sure to download Gnuwin Package, select grep, and download comp
 <div class="create">
  <h3 class="cfile"><span class="file">CREATE FILE</span></h3>
 <!-- Return here to fix listed items/ try label? -->
- <ul>
-  <li>-touch (for files)</li> 
-  <li>-echo </li>
-</ul>
+ <dl>
+  <dt>-touch (for files)</dt> 
+  <dt>-echo </dt>
+</dl>
 </div>
 <div class="Bash">
 <h3 class="bcmd"><span class="cmdb"> BASH COMMANDS</span> </h3>
 <!-- return here to fix listed items/ try label? -->
-<ul>
-    <li>mkdir </li>
-    <li>ls -a </li>
-    <li>ls </li>
-    <li>code . </li>
-    <li>cd .. </li>
-    <li>cd . </li>
-    <li>git help (Display the main help documentation, showing a list of commonly used Git commands.)
-    </li>
-</ul>
+<dl>
+    <dt>mkdir </dt>
+    <dt>ls -a </dt>
+    <dt>ls </dt>
+    <dt>code . </dt>
+    <dt>cd .. </dt>
+    <dt>cd . </dt>
+    <dt>git help (Display the main help documentation, showing a list of commonly used Git commands.)
+    </dt>
+</dl>
 </div>
 <div class="Git">
     <h3 class="gcmd"> <span class="scb">GIT COMMANDS</span> </h3>
     <!-- Return here to fix listed items/ try label? -->
-<ul>
-        <li>git switch</li> 
-        <li>git clone </li>
-        <li>git branch</li> 
-</ul>
+<dl>
+        <dt>git switch</dt> 
+        <dt>git clone </dt>
+        <dt>git branch</dt> 
+</dl>
 </div>
-<section class="Git">
+<section class="Git2">
   <h3 class="bgcmd"><span class="intro">BASIC GIT Commands</span> </h3>
 <!-- try label? -->
-   <p><pre>-git add  <"file"> <br>
+   <p><pre><strong>-git add  <"file"> <br>
     (Adds a specific file to the staging area.) <br>
     -git add . or git add -all <br>
     (Adds all modified and new files to the staging area) <br>
@@ -241,7 +241,7 @@ Noted Option: Be sure to download Gnuwin Package, select grep, and download comp
     (Displays the differences between two commits.) <br>
     -git diff –staged or git diff –cached <br>
     (Displays the changes between the staging area (index) and the last commit.)
-    </pre></p> 
+    </strong></pre></p> 
   </section>
 
 <footer id="creation">Created By: Jasmine Boyd </footer>

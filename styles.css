@@ -23,6 +23,12 @@
         text-align: center;
 }
 
+.Git2 {
+    border: 5px outset purple;
+    background-color: light pink;
+    text-align: center;
+}
+
 #creation {
         text-align: center;
 }
@@ -66,6 +72,42 @@ span.scb {
 }
 
 span.intro {
+    color: green;
+}
+
+span.ignore {
+    color: green;
+}
+
+span.invert {
+    color: green;
+}
+
+span.count {
+    color: green;
+}
+
+span.matches {
+    color: green;
+}
+
+span.reg {
+    color: green;
+}
+
+span.line {
+    color: green;
+}
+
+span.ext {
+    color: green;
+}
+
+span.fixed {
+    color: green;
+}
+
+span.perl {
     color: green;
 }
 
