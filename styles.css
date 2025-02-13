@@ -111,6 +111,11 @@ span.perl {
     color: green;
 }
 
+.flex {
+    border-radius: 500px;
+    
+}
+
 /* .btn btn-primary {
     text-decoration: none;
     text-align: center;
