@@ -4,46 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Git Bash Commandline</title>
   
 </head>
+
 <body>
-    <nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
+  <header>
+     <nav class="flex space-between">
+  
     <a class="navbar-brand" href="#">
       <img src="https://th.bing.com/th?q=Git+Bash+Windows+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-US&cc=US&setlang=en&adlt=moderate&t=1&mw=247" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       Git Bash CommandLine
     </a>
-  </div>
+     <ul>
+          <li><a href="#ideas">Ideas Forum </a></li>
+          <li><a href="#about">About </a></li>
+          
+          <li style="float:right"><a class="active" href="#login">Login Here</a></li>
+        </ul>
 </nav>
-
-
-
+</header>
+  <main>
+ 
 <div class="Grep">
    <h1 class="The GREP WAY">The GREP Way</h1>
 
-    <pre>The grep command is a powerfli utility for searching text using patterns. It searches for <br> <span class="color">PATTERNS</span>  in each <span class="color">FILE</span> and prints each line that matches a pattern. Typically,<span class="color">PATTERNS </span>sholid be quoted when grep is used in a shell command.</pre>
+    <pre>The grep command is a powerfli utility for searching text using patterns. It searches for <span class="color">PATTERNS</span>  in each <span class="color">FILE</span> and prints each line that matches a pattern. Typically,<span class="color">PATTERNS </span>sholid be quoted when grep is used in a shell command.</pre>
 
 <p>Noted Option: Be sure to download Gnuwin Package, select grep, and download complete packet w/out src for Windows use or GREpWin, whichever suits you.</p>
 </div>
-
+<section>
+  <h2 class="heading1">Understanding GREP</h2>
+  <p class="p">Grep is one among the system administrator’s “Swiss Army knife” set of tools, and is extremely useful to search for strings and patterns in a group of files, or even sub-folders. This introduces the basics of Grep, provides examples of advanced use and links you to further reading. Good Luck!</p>
+</section>
 
 <div class="BSyn">
 <h2 class="Basic"><span class="Basic">Basic Syntax:</span></h2>
 
-<span class="note">grep [OPTION...] PATTERNS [FILE...] </span><br>
+<span class="note">grep [OPTION...] PATTERNS [FILE...] </span>
 
 <p id="Options">Common Options:</p>
 
-<pre><strong>-i</strong>, <span class="ignore">--ignore-case:</span> Ignore case distinctions in patterns and input data. <br>
-<strong>-v</strong>,<span class="invert">--invert-match:</span>  Invert the sense of matching, to select non-matching lines. <br>
-<strong>-c</strong>, <span class="count">--count: </span>Suppress normal output; instead print a count of matching lines for each input file. <br>
-<strong>-l</strong>, <span class=" matches">--files-with-matches:</span> Suppress normal output; instead print the name of each input file from which output wolid normally have been printed. <br>
-<strong>-w</strong>,<span class="reg">--word-regexp:</span>  Select only those lines containing matches that form whole words. <br>
-<strong>-x</strong>, <span class="line">--line-regexp:</span> Select only those matches that exactly match the whole line. <br>
-<strong>-E</strong>, <span class="ext">--extended-regexp: </span>Interpret PATTERNS as extended regliar expressions (EREs). <br>
-<strong>-F</strong>, <span class="fixed">--fixed-strings:</span> Interpret PATTERNS as fixed strings, not regliar expressions. <br>
+<pre><strong>-i</strong>, <span class="ignore">--ignore-case:</span> Ignore case distinctions in patterns and input data.
+<strong>-v</strong>,<span class="invert">--invert-match:</span>  Invert the sense of matching, to select non-matching lines.
+<strong>-c</strong>, <span class="count">--count: </span>Suppress normal output; instead print a count of matching lines for each input file.
+<strong>-l</strong>, <span class=" matches">--files-with-matches:</span> Suppress normal output; instead print the name of each input file from which output wolid normally have been printed.
+<strong>-w</strong>,<span class="reg">--word-regexp:</span>  Select only those lines containing matches that form whole words.
+<strong>-x</strong>, <span class="line">--line-regexp:</span> Select only those matches that exactly match the whole line.
+<strong>-E</strong>, <span class="ext">--extended-regexp: </span>Interpret PATTERNS as extended regliar expressions (EREs).
+<strong>-F</strong>, <span class="fixed">--fixed-strings:</span> Interpret PATTERNS as fixed strings, not regliar expressions.
 <strong>-P</strong>, <span class="perl">--perl-regexp:</span> Interpret PATTERNS as Perl-compatible regliar expressions (PCREs). </pre> 
 </div>
 
@@ -51,99 +60,106 @@
 
 <h2 id="Examples"><span class="title">Examples: </span></h2>
 
- <p id="1"><strong> -Search for a pattern in a file: <br>
+ <p id="1"><strong> -Search for a pattern in a file:
     grep 'pattern' filename 
 
-    <p id="2">-Search recursively in directories: <br>
+    <p id="2">-Search recursively in directories:
     grep -r 'pattern' directory/ 
 
-    <p id="3">-Count occurrences of a pattern: <br>
+    <p id="3">-Count occurrences of a pattern:
     grep -c 'pattern' filename
 
-    <p id="4">-Display line numbers with matches: <br>
+    <p id="4">-Display line numbers with matches:
     grep -n 'pattern' filename
 
-    <p id="5">-Search for mlitiple patterns: <br>
+    <p id="5">-Search for mlitiple patterns:
     grep -e 'pattern1' -e 'pattern2' filename
 
-    <p id="6">-Use extended regliar expressions: <br>
+    <p id="6">-Use extended regliar expressions:
     grep -E 'pattern' filename
 
-    <p id="7">-Search for whole words: <br>
+    <p id="7">-Search for whole words:
     grep -w 'word' filename
 
-    <p id="8">-Invert match (show lines that do not match): <br>
+    <p id="8">-Invert match (show lines that do not match):
     grep -v 'pattern' filename
 
-    <p id="9">-Display only the matched part of the line: <br>
+    <p id="9">-Display only the matched part of the line:
     grep -o 'pattern' filename
 
-    <p id="10">-Highlight matches in color: <br>
+    <p id="10">-Highlight matches in color:
     grep --color=auto 'pattern' filename
 
-    <p id="11">-Search for a pattern in mlitiple files: <br>
+    <p id="11">-Search for a pattern in mlitiple files:
     grep 'pattern' file1 file2 file3
 
-    <p id="12">-Suppress error messages about nonexistent or unreadable files: <br>
+    <p id="12">-Suppress error messages about nonexistent or unreadable files:
     grep -s 'pattern' filename
 
-    <p id="13">-Display the name of each file with matching lines: <br>
+    <p id="13">-Display the name of each file with matching lines:
     grep -H 'pattern' filename
 
-    <p id="14">-Display only the names of files containing matches: <br>
+    <p id="14">-Display only the names of files containing matches:
     grep -l 'pattern' *
 
-    <p>-Display only the names of files not containing matches: <br>
+    <p>-Display only the names of files not containing matches:
     grep -L 'pattern' *
 
-    <p id="15">-Search for lines matching a pattern at the beginning of a line: <br>
+    <p id="15">-Search for lines matching a pattern at the beginning of a line:
     grep '^pattern' filename
 
-    <p id="16">-Search for lines matching a pattern at the end of a line: <br>
+    <p id="16">-Search for lines matching a pattern at the end of a line:
     grep 'pattern$' filename
 
-    <p id="17">-Search for lines containing a pattern and display the 3 lines after each match: <br>
+    <p id="17">-Search for lines containing a pattern and display the 3 lines after each match:
     grep -A 3 'pattern' filename
 
-    <p id="18">-Search for lines containing a pattern and display the 2 lines before each match: <br>
+    <p id="18">-Search for lines containing a pattern and display the 2 lines before each match:
     grep -B 2 'pattern' filename
     </p>
-    <p id="19">-Search for lines containing a pattern and display the 2 lines before and after each <br>
+    <p id="19">-Search for lines containing a pattern and display the 2 lines before and after each
     grep -C 2 'pattern' filename
     </p>
-    <p id="20">-Search for lines matching a pattern in a compressed file: <br>
+    <p id="20">-Search for lines matching a pattern in a compressed file:
     zgrep 'pattern' file.gz
     </p>
-    <p id="21">-Search for lines matching a pattern in the output of a command: <br>
+    <p id="21">-Search for lines matching a pattern in the output of a command:
     command | grep 'pattern'
     </p>
-    <p id="22">-Search for lines matching a pattern in all files in the current directory: <br>
+    <p id="22">-Search for lines matching a pattern in all files in the current directory:
     grep 'pattern' *
     </p>
-    <p id="23">-Search for lines matching a pattern in all .txt files in the current directory: <br>
+    <p id="23">-Search for lines matching a pattern in all .txt files in the current directory:
     grep 'pattern' *.txt
     </p>
-    <p id="24">-Search for lines matching a pattern in all files in the current directory and subdirectories: <br>
+    <p id="24">-Search for lines matching a pattern in all files in the current directory and subdirectories:
     grep -r 'pattern' .
     </p>
-    <p id="25">-Search for lines matching a pattern in all .txt files in the current directory and subdirectories: <br>
+    <p id="25">-Search for lines matching a pattern in all .txt files in the current directory and subdirectories:
     grep -r --include='*.txt' 'pattern' .
     </p>
-    <p id="26">-Search for lines matching a pattern in all files except .txt files in the current directory and subdirectories: <br>
+    <p id="26">-Search for lines matching a pattern in all files except .txt files in the current directory and subdirectories:
     grep -r --exclude='*.txt' 'pattern' .
     </p>
-    <p id="27">-Search for lines matching a pattern in all hidden files in the current directory: <br>
+    <p id="27">-Search for lines matching a pattern in all hidden files in the current directory:
     grep 'pattern' .*
     </p>
-    <p id="28">-Search for lines matching a pattern in all hidden files in the current directory and subdirectories: <br>
+    <p id="28">-Search for lines matching a pattern in all hidden files in the current directory and subdirectories:
     grep -r 'pattern' .[^.]*
 
-    <p id="29">-Search for lines matching a pattern in all files in the current directory, excluding binary files: <br>
+    <p id="29">-Search for lines matching a pattern in all files in the current directory, excluding binary files:
 
     grep -I 'pattern' *
     </strong></p>
 </div>
+<section class="flex space-around">
+  <h2 class="fact">Fun Fact:</h2>
+  <p class="funfact"><span class="loco">sl Command (Steam Locomotive)
+You might be aware of the command ls command, which is used frequently to view the contents of a directory but because of miss-typing sometimes you would result in ‘sl‘.
 
+The sl command is to playfully simulate a train moving across your terminal when you accidentally type “sl” instead of “ls” (a common mistype).</span></p>
+<img src="https://www.tecmint.com/wp-content/uploads/2021/06/sl-Command-in-Linux.png" style='width: 75%'alt="sl command in Linux">
+</section>
 <div class="config">
    
 <h2 id="config"><span class="gc">Git Config'D</span></h2>
@@ -166,7 +182,7 @@
 
  <h5>Initializing Repo</h5>
    <p>
-    <!-- return here to fix listed items / try label?-->
+  
     <dl>
         <dt>git init "(directory)"
         (Creates a new Git repository in the specified directory.) </dt>
@@ -181,7 +197,7 @@
 
 <div class="create">
  <h3 class="cfile"><span class="file">CREATE FILE</span></h3>
-<!-- Return here to fix listed items/ try label? -->
+
  <dl>
   <dt>-touch (for files)</dt> 
   <dt>-echo </dt>
@@ -189,7 +205,7 @@
 </div>
 <div class="Bash">
 <h3 class="bcmd"><span class="cmdb"> BASH COMMANDS</span> </h3>
-<!-- return here to fix listed items/ try label? -->
+
 <dl>
     <dt>mkdir </dt>
     <dt>ls -a </dt>
@@ -203,7 +219,7 @@
 </div>
 <div class="Git">
     <h3 class="gcmd"> <span class="scb">GIT COMMANDS</span> </h3>
-    <!-- Return here to fix listed items/ try label? -->
+    
 <dl>
         <dt>git switch</dt> 
         <dt>git clone </dt>
@@ -212,33 +228,30 @@
 </div>
 <section class="Git2">
   <h3 class="bgcmd"><span class="intro">BASIC GIT Commands</span> </h3>
-<!-- try label? -->
-   <p><pre><strong>-git add  <"file"> <br>
-    (Adds a specific file to the staging area.) <br>
-    -git add . or git add -all <br>
-    (Adds all modified and new files to the staging area) <br>
-    -git status  <br>
-    (Shows the current state of your repository, including tracked and untracked files, modified files, and branch information.) <br>
-    -git status –ignored <br>
-    (Displays ignored files in addition to the regliar status output.) <br>
-    -git diff <br>
-    (Shows the changes between the working directory and the staging area (index).) <br>
-    -git diff <commit1> <commit2> <br>
-    (Displays the differences between two commits.) <br>
-    -git diff –staged or git diff –cached <br>
+
+   <p><pre><strong>-git add  <"file">
+    (Adds a specific file to the staging area.)
+    -git add . or git add -all
+    (Adds all modified and new files to the staging area)
+    -git status 
+    (Shows the current state of your repository, including tracked and untracked files, modified files, and branch information.)
+    -git status –ignored
+    (Displays ignored files in addition to the regliar status output.)
+    -git diff
+    (Shows the changes between the working directory and the staging area (index).)
+    -git diff <commit1> <commit2>
+    (Displays the differences between two commits.)
+    -git diff –staged or git diff –cached
     (Displays the changes between the staging area (index) and the last commit.)
     </strong></pre></p> 
-  </section>
-
-<footer id="creation">Created By: Jasmine Boyd </footer>
-<main>
-<section class="btn">
-<a class="btn btn-primary" href="https://www.youtube.com/watch?v=Tc_jntovCM0" role="button"> Grep Link</a>
-</section>
+ 
 </main>
+<footer id="creation">Created By: Jasmine Boyd </footer>
+<div>
+<a class="btn btn-primary" href="https://www.youtube.com/watch?v=Tc_jntovCM0" role="button"> Grep Link</a>
+</div>
 <script src="app.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
 
-<!-- Reconsider <main> and <sections> next -->
