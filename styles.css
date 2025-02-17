@@ -250,6 +250,22 @@ span.CNp2{
         padding-left: 220px;
 }
 
+.form-heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-left: 220px;
+}
+
+.share-pass {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-left: 220px;
+    }
+
 #btn {
     display: flex;
         flex-direction: column;
@@ -259,7 +275,8 @@ span.CNp2{
         border-radius: 50px 50px;
         width: 100px;
         height: 70px;
-        padding: 20px 30px 20px 30px  ;
+        padding: 10px 30px 10px 20px  ;
         margin-top: 15px;
         margin-left: 450px;
+        justify-content: space-around;
     }

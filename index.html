@@ -16,6 +16,8 @@
              <li><a href="#">Home</a></li>
              <li><a href="#">About GIT</a></li>
              <li><a href="#">About GREP</a></li>
+             <li><a href="#">About Powershell</a></li>
+             <li><a href="#">About Cygwin</a></li>
              <li style="float:right"><a class="active" href="#login">Login Here</a></li>
             </ul>
         </nav>
@@ -23,17 +25,15 @@
     <main>
 
        <section>
-
-        <!-- <form class="login">
-            <label for="">Name:</label>
-            <label for="">Email</label>
-            <label for="">Message:</label>
-        </form> -->
            
         <form 
         method="GET" 
-        action="#"
-        id="login">
+        action="https://google.com/"
+        id="q"
+        class="form"
+        aria- aria-labelledby="form-heading" >
+
+        <h2 class="form-heading">SIGN ME UP!</h2>
 
             <label class="label1">
                 Name:
@@ -42,34 +42,37 @@
             
             <label class="label2">
                 Email:
-                <input required type="email" name="email" id="email">
+                <input required aria-required="true" type="email" name="email" id="email">
             </label>
 
             <label class="label3">
                 Password:
-                <input required minlength="8" type="password" name="password" id="password">
+                <input required aria-required="true" minlength="8" type="password" name="password" id="password">
             </label>
 
             <label class="label4">
                 Confirm Password:
-                <input required minlength="8" type="confirm" name="confirm" id="confirm">
+                <input required aria-required="true" minlength="8" type="confirm" name="confirm" id="confirm" aria-describedby="share-pass"/>
             </label>
-
+                <small class="share-pass">We will never share your information!</small>
              <label class="label5">
                 Message:
                 <textarea rows="20" name="message" id="message"></textarea>:
             </label>
+        </section>
+
+        <section>
 
             <label class="choice">
-                Forum Choice:
-                <select name="terminal" id="terminal">
+                Search:
+                <select name="q" id="terminal">
                     <option value="powershell">Powershell</option>
                     <option value="gitbash">Git Bash</option>
                     <option value="cygwin">Cygwin</option>
                 </select>
             </label>
 
-            <button id="btn">GIT Sumbit</button>
+            <button id="btn"><strong>SUBMIT HERE!</strong></button>
         </form>
 
       
