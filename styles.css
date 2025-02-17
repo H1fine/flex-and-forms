@@ -1,9 +1,13 @@
+body{
+    margin: 0;
+}
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgba(43, 226, 104, 0.76);
+  
 }
 
 li {
@@ -180,3 +184,82 @@ span.perl {
 
 }
 
+.Np2 {
+    text-align: center;
+    margin: 40px 30px;
+    padding: 35px;
+    height: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: 200px;
+    border: solid blueviolet 10px ;
+    
+}
+
+span.CNp2{
+    background-color: rgba(162, 230, 99, 0.836);
+    color: rgba(170, 16, 137, 0.89);
+    padding-top: 15px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+}
+
+.label1 {
+  display: flex;
+  flex-direction: column; 
+  width: 500px; 
+  padding-left: 220px;
+  
+}
+
+.label2 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-left: 220px;
+    
+}
+
+.label3 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-left: 220px;
+}
+
+.label4 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-left: 220px;
+}
+
+.label5 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-left: 220px;
+}
+
+.choice{
+    display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding-left: 220px;
+}
+
+#btn {
+    display: flex;
+        flex-direction: column;
+        background-color: lightgreen;
+        color: blueviolet;
+        border-color: green;
+        border-radius: 50px 50px;
+        width: 100px;
+        height: 70px;
+        padding: 20px 30px 20px 30px  ;
+        margin-top: 15px;
+        margin-left: 450px;
+    }
