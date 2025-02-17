@@ -280,3 +280,19 @@ span.CNp2{
         margin-left: 450px;
         justify-content: space-around;
     }
+
+    .CB{
+        text-align: center;
+        display: flex;
+            flex-direction: column;
+            width: 500px;
+            padding-left: 235px;
+    }
+
+    .welcome{
+    text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding-left: 235px;
+    }
