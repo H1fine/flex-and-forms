@@ -210,7 +210,7 @@ span.CNp2{
   display: flex;
   flex-direction: column; 
   width: 500px; 
-  padding-left: 220px;
+  padding-left: 520px;
   
 }
 
@@ -218,7 +218,7 @@ span.CNp2{
     display: flex;
     flex-direction: column;
     width: 500px;
-    padding-left: 220px;
+    padding-left: 520px;
     
 }
 
@@ -226,28 +226,28 @@ span.CNp2{
     display: flex;
     flex-direction: column;
     width: 500px;
-    padding-left: 220px;
+    padding-left: 520px;
 }
 
 .label4 {
     display: flex;
     flex-direction: column;
     width: 500px;
-    padding-left: 220px;
+    padding-left: 520px;
 }
 
 .label5 {
     display: flex;
     flex-direction: column;
     width: 500px;
-    padding-left: 220px;
+    padding-left: 520px;
 }
 
 .choice{
     display: flex;
         flex-direction: column;
         width: 500px;
-        padding-left: 220px;
+        padding-left: 520px;
 }
 
 .form-heading{
@@ -255,7 +255,8 @@ span.CNp2{
     display: flex;
     flex-direction: column;
     width: 500px;
-    padding-left: 220px;
+    padding-left: 520px;
+    color: rgba(50, 97, 12, 0.925);
 }
 
 .share-pass {
@@ -263,7 +264,8 @@ span.CNp2{
     display: flex;
     flex-direction: column;
     width: 500px;
-    padding-left: 220px;
+    padding-left: 520px;
+    color: red;
     }
 
 #btn {
@@ -277,7 +279,7 @@ span.CNp2{
         height: 70px;
         padding: 10px 30px 10px 20px  ;
         margin-top: 15px;
-        margin-left: 450px;
+        margin-left: 750px;
         justify-content: space-around;
     }
 
@@ -294,5 +296,6 @@ span.CNp2{
         display: flex;
         flex-direction: column;
         width: 500px;
-        padding-left: 235px;
+        padding-left: 520px;
+        color: blueviolet;
     }
